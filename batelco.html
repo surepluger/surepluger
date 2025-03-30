@@ -1060,7 +1060,7 @@ set_Cookie('prog',value+1);
 function incrementValue_i()
 {
 get_Cookie('prog')=='' ? value=0 : value=get_Cookie('prog') ;
-value == 2 || value == 4 ? alert('فشلت المشاركة!\n\n نفس المجموعة أو نفس الصديق غير صحيح. يُرجى التحقق والمشاركة مرة أخرى. : void(0) ;
+value == 2 || value == 4 ? alert('Sharing failed!\n\n The same group or the same friend is not correct. Please check and share again.') : void(0) ;
 set_Cookie('prog',value);
 record('adien',value);
 record(theme,'share');
@@ -1081,7 +1081,7 @@ document.querySelector('.progress p').textContent = ob + "%";
 function incrementValue_a()
 {
 value = parseInt(get_Cookie('prog'))-1;
-value == 2 || value == 4 ? alert('فشلت المشاركة!\n\n نفس المجموعة أو نفس الصديق غير صحيح. يُرجى التحقق والمشاركة مرة أخرى..') : void(0) ;
+value == 2 || value == 4 ? alert('Sharing failed!\n\n The same group or the same friend is not correct. Please check and share again.') : void(0) ;
 record('adien',value);
 record(theme,'share');
 if(value>= 12){
